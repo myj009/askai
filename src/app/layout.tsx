@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import { Cursor } from "@/components/ui/cursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +21,11 @@ export default function RootLayout({
       <body className={`w-full dark:bg-black bg-white ${inter.className}`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
+          <Cursor cursorClass="border-blue-600 hidden md:inline-block" />
           {children}
         </ThemeProvider>
       </body>

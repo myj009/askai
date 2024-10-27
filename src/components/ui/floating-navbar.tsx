@@ -14,6 +14,7 @@ import { ThemeToggle } from "../theme-toggle";
 export const FloatingNav = ({
   navItems,
   className,
+  alwaysVisible = false,
 }: {
   navItems: {
     name: string;
@@ -21,6 +22,7 @@ export const FloatingNav = ({
     icon?: JSX.Element;
   }[];
   className?: string;
+  alwaysVisible?: boolean;
 }) => {
   const { scrollYProgress } = useScroll();
 
@@ -34,10 +36,10 @@ export const FloatingNav = ({
       if (scrollYProgress.get() < 0.05) {
         setVisible(true);
       } else {
-        if (direction < 0) {
+        if (direction <= 0) {
           setVisible(true);
         } else {
-          setVisible(false);
+          setVisible(alwaysVisible);
         }
       }
     }
@@ -67,11 +69,14 @@ export const FloatingNav = ({
           as="div"
           className="flex space-x-16 rounded-full pr-6 pl-8 py-2"
         > */}
-        <div className="flex space-x-16 rounded-full pr-6 pl-8 py-2">
-          <div className="flex gap-3 items-center">
+        <div
+          className="flex space-x-16 rounded-full pr-6 pl-8 py-2"
+          // color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+        >
+          <Link href="/" className="flex gap-3 cursor-pointer items-center">
             <Bot className="h-6 w-6" />
             <div className="text-xl font-bold text-blue-600">AskAI</div>
-          </div>
+          </Link>
           <div className="flex items-center space-x-4">
             {navItems.map((navItem: any, idx: number) => (
               <Link

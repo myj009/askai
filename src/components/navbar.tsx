@@ -1,18 +1,12 @@
-import React from "react";
-import { FloatingNav } from "./ui/floating-navbar";
 import {
   AudioWaveform,
-  Home,
-  Image,
   ImageDown,
-  MessageCircle,
   MessageCircleCode,
-  PhoneOutgoing,
-  User,
   Video,
 } from "lucide-react";
+import { FloatingNav } from "./ui/floating-navbar";
 
-export default function Navbar() {
+export default function Navbar({ alwaysVisible }: { alwaysVisible?: boolean }) {
   const navItems = [
     {
       name: "Chat",
@@ -39,5 +33,5 @@ export default function Navbar() {
       ),
     },
   ];
-  return <FloatingNav navItems={navItems} />;
+  return <FloatingNav navItems={navItems} alwaysVisible={alwaysVisible} />;
 }
