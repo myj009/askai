@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Power Your Business With AskAI.
+Unleash your Creativity with AI: Chat, Create, and Transform Instantly. All-in-One AI Tools to Elevate Your Imagination Seamlessly.
+
+
+https://github.com/user-attachments/assets/e7a20075-b4bf-4a36-9a76-7d3e58074b1c
+
 
 ## Getting Started
 
