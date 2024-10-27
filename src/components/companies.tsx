@@ -1,15 +1,14 @@
-import React from "react";
-import Marquee from "./ui/marquee";
-import Image from "next/image";
+import Airbnb from "@/assets/airbnb.svg";
+import Cocacola from "@/assets/coca-cola.svg";
+import Facebook from "@/assets/facebook.svg";
 import Google from "@/assets/google.svg";
 import Microsoft from "@/assets/microsoft.svg";
 import Netflix from "@/assets/netflix.svg";
-import Airbnb from "@/assets/airbnb.svg";
 import Ola from "@/assets/ola.svg";
 import Spotify from "@/assets/spotify.svg";
-import Cocacola from "@/assets/coca-cola.svg";
-import Facebook from "@/assets/facebook.svg";
 import Xbox from "@/assets/xbox.svg";
+import Image from "next/image";
+import Marquee from "./ui/marquee";
 
 export default function Companies() {
   const logos = [

@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 type cursorProp = {
   cursorClass?: string;

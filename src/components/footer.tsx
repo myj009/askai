@@ -1,5 +1,5 @@
 import { Bot } from "lucide-react";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 const Footer = () => {
   return (

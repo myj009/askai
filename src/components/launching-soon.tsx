@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
+import { cn } from "@/lib/utils";
 
 export function LaunchingSoon() {
   return (
