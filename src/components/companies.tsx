@@ -1,4 +1,4 @@
-import Airbnb from "@/assets/airbnb.svg";
+import Forbes from "@/assets/forbes.svg";
 import Cocacola from "@/assets/coca-cola.svg";
 import Facebook from "@/assets/facebook.svg";
 import Google from "@/assets/google.svg";
@@ -13,7 +13,7 @@ import Marquee from "./ui/marquee";
 export default function Companies() {
   const logos = [
     { src: Google, alt: "Google" },
-    { src: Airbnb, alt: "Airbnb" },
+    { src: Forbes, alt: "Forbes" },
     { src: Microsoft, alt: "Microsoft" },
     { src: Spotify, alt: "Spotify" },
     { src: Netflix, alt: "Netflix" },
@@ -29,7 +29,7 @@ export default function Companies() {
         Trusted by 100+ brands and agencies, generating 100,000+ AI and
         creatives
       </h4>
-      <div className="flex items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-black">
+      <div className="flex w-screen items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-black">
         <Marquee pauseOnHover className="[--duration:20s]">
           {logos.map((logo) => (
             <Image
