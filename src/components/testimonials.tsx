@@ -103,7 +103,7 @@ export function Testimonials() {
       <h4 className="text-3xl lg:text-5xl text-foreground lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium">
         Testimonials
       </h4>
-      <div className="relative flex h-[500px] w-full flex-row gap-10 items-center justify-center overflow-hidden rounded-lg bg-background text-foreground md:shadow-xl">
+      <div className="relative flex h-[500px] w-full flex-row gap-10 items-center justify-center overflow-hidden rounded-lg bg-background text-foreground">
         <Marquee pauseOnHover vertical className="[--duration:25s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
