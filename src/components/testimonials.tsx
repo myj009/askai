@@ -1,5 +1,6 @@
 import Marquee from "@/components/ui/marquee";
 import { cn } from "@/lib/utils";
+import { FadeText } from "./ui/fade-text";
 
 const reviews = [
   {
@@ -99,11 +100,12 @@ const ReviewCard = ({
 
 export function Testimonials() {
   return (
-    <div className="flex flex-col gap-20 mt-32">
-      <h4 className="text-3xl lg:text-5xl text-foreground lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium">
-        Testimonials
-      </h4>
-      <div className="relative flex h-[500px] w-full flex-row gap-10 items-center justify-center overflow-hidden rounded-lg bg-background text-foreground">
+    <div className="flex flex-col items-center gap-20 mt-32">
+      <FadeText
+        text="Testimonials"
+        className="text-3xl lg:text-5xl text-foreground lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium"
+      />
+      <div className="relative flex h-[500px] w-full flex-row gap-10 md:gap-16 items-center justify-center overflow-hidden rounded-lg bg-background text-foreground">
         <Marquee pauseOnHover vertical className="[--duration:25s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />

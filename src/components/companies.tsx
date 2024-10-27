@@ -9,6 +9,7 @@ import Spotify from "@/assets/spotify.svg";
 import Xbox from "@/assets/xbox.svg";
 import Image from "next/image";
 import Marquee from "./ui/marquee";
+import { FadeText } from "./ui/fade-text";
 
 export default function Companies() {
   const logos = [
@@ -25,10 +26,14 @@ export default function Companies() {
 
   return (
     <div className="relative w-full flex my-32 flex-col gap-12 items-center justify-center">
-      <h4 className="text-muted-foreground px-12">
-        Trusted by 100+ brands and agencies, generating 100,000+ AI and
+      <FadeText
+        text="Trusted by 100+ brands and agencies, generating 100,000+ AI and
+        creatives"
+        className="text-muted-foreground text-2xl px-12"
+      />
+      {/* Trusted by 100+ brands and agencies, generating 100,000+ AI and
         creatives
-      </h4>
+      </FadeText> */}
       <div className="flex w-screen items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-black">
         <Marquee pauseOnHover className="[--duration:20s]">
           {logos.map((logo) => (

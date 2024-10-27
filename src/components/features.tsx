@@ -9,6 +9,7 @@ import {
   IconRouteAltLeft,
   IconTerminal2,
 } from "@tabler/icons-react";
+import { FadeText } from "./ui/fade-text";
 
 export default function Features() {
   const features = [
@@ -59,16 +60,17 @@ export default function Features() {
   ];
   return (
     <div className="w-full dark:bg-black bg-white dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] flex items-center justify-center">
-      <div className="flex flex-col gap-6">
-        <div className="px-8">
-          <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-            Packed with thousands of features
-          </h4>
-
-          <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-            From Chat to Image generation to Video generation, AskAI has
-            literally everything. It is only limited by your imagination.
-          </p>
+      <div className="flex flex-col items-center gap-6 py-6">
+        <div className="flex flex-col gap-4 items-center">
+          <FadeText
+            text="Packed with thousands of features"
+            className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white"
+          />
+          <FadeText
+            text="From Chat to Image generation to Video generation, AskAI has
+            literally everything. It is only limited by your imagination."
+            className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300"
+          />
         </div>
 
         <div className="flex relative flex-col gap-10">

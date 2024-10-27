@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { FadeText } from "./ui/fade-text";
 
 interface PricingTabProps {
   yearly: boolean;
@@ -83,10 +84,12 @@ export default function Pricing() {
   const [isAnnual, setIsAnnual] = useState<boolean>(true);
 
   return (
-    <div className="container w-full flex flex-col gap-10 mt-40 px-2 md:px-6">
-      <h4 className="text-3xl lg:text-5xl text-foreground lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium">
-        Pricing
-      </h4>
+    <div className="container w-full flex flex-col items-center gap-10 mt-40 px-2 md:px-6">
+      <FadeText
+        text="Pricing"
+        className="text-3xl lg:text-5xl text-foreground lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium"
+      />
+
       {/* Pricing toggle */}
       <div className="flex gap-1 justify-center max-w-[14rem] m-auto">
         <Button
