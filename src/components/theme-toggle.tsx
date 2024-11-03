@@ -17,9 +17,9 @@ export function ThemeToggle() {
       }}
     >
       {theme == "light" ? (
-        <Moon className="absolute h-5 w-5 transition-transform duration-300 ease-in-out transform rotate-0" />
-      ) : (
         <Sun className="h-5 w-5 transition-transform duration-300 ease-in-out transform rotate-180" />
+      ) : (
+        <Moon className="h-5 w-5 transition-transform duration-300 ease-in-out transform rotate-0" />
       )}
     </Button>
   );

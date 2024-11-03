@@ -7,7 +7,7 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Chat Application",
+  title: "AskAI",
   description: "Chat with an AI powered by OpenAI",
 };
 

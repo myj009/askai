@@ -25,17 +25,19 @@ export default function Companies() {
   ];
 
   return (
-    <div className="relative w-full flex my-32 flex-col gap-12 items-center justify-center">
-      <FadeText
-        text="Trusted by 100+ brands and agencies, generating 100,000+ AI and
+    <div className="w-full flex my-32 flex-col gap-12 items-center justify-center">
+      <div className="text-center px-2 md:px-8">
+        <FadeText
+          text="Trusted by 100+ brands and agencies, generating 100,000+ AI and
         creatives"
-        className="text-muted-foreground text-2xl px-12"
-      />
+          className="text-muted-foreground text-2xl"
+        />
+      </div>
       {/* Trusted by 100+ brands and agencies, generating 100,000+ AI and
         creatives
       </FadeText> */}
-      <div className="flex w-screen items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-black">
-        <Marquee pauseOnHover className="[--duration:20s]">
+      <div className="relative flex w-screen items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-black">
+        <Marquee pauseOnHover className="[--duration:30s]">
           {logos.map((logo) => (
             <Image
               key={logo.alt}
@@ -45,9 +47,9 @@ export default function Companies() {
             />
           ))}
         </Marquee>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 md:w-1/4 bg-gradient-to-r from-white dark:from-black"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 md:w-1/4 bg-gradient-to-l from-white dark:from-black"></div>
       </div>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 md:w-1/4 bg-gradient-to-r from-white dark:from-black"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 md:w-1/4 bg-gradient-to-l from-white dark:from-black"></div>
     </div>
   );
 }

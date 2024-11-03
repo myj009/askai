@@ -61,7 +61,7 @@ export default function Features() {
   return (
     <div className="w-full dark:bg-black bg-white dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] flex items-center justify-center">
       <div className="flex flex-col items-center gap-6 py-6">
-        <div className="flex flex-col gap-4 items-center">
+        <div className="container flex flex-col gap-4 items-center justify-center text-center px-2 md:px-6">
           <FadeText
             text="Packed with thousands of features"
             className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white"
@@ -74,7 +74,7 @@ export default function Features() {
         </div>
 
         <div className="flex relative flex-col gap-10">
-          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse,transparent_100%,black)]"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
             {features.map((feature, index) => (
               <Feature key={feature.title} {...feature} index={index} />
